@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Rivenatti">
+
+   <!-- CSS -->
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css" type="text/css">
+   
+   <!-- JS SCRIPTS -->
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/generate.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+   
+   <!-- Page Title -->
+    <title>Password Generator</title>
+    
+  </head>
+  <body>
+
+    <div class="container options-form col-12 col-sm-10 col-md-6 col-xl-4">
+        <h2>Password Generator</h2>
+        <hr>
+        
+        <div class="row">
+            <div class="col-8 offset-2"> 
+                <div class="form-group">
+                    <h2>PASSWORD</h2>
+                    <textarea class="form-control" rows="1" readonly id="password"></textarea>
+                </div><!-- FORM-GROUP --> 
+            </div><!-- COL --> 
+        </div><!-- ROW -->
+       <form>   
+        <div class="row">                                       
+                                         
+               <div class="form-group form-inline">
+                    <label for="chars" class="label-control col-4 col-sm-3">characters</label>
+                    <input type="number" id="characters" class="form-control col-2 col-sm-2" value=8>
+                    <small id="charactersHelpInline" class="text-danger col-6 col-sm-7">
+                        <b>Must be 4-20 characters long.</b>
+                    </small>
+               </div><!-- FORM-GROUP --> 
+            <div class="col-12 col-sm-6">                             
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="lowercase" checked>
+                  <label class="custom-control-label" for="lowercase">lowercase</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="uppercase" checked>
+                  <label class="custom-control-label" for="uppercase">uppercase</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="numbers" checked>
+                  <label class="custom-control-label" for="numbers">numbers [0-9]</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="special" checked>
+                  <label class="custom-control-label" for="special">special [@,#,$,...]</label>
+                </div>
+            </div><!-- COL --> 
+                </div><!-- ROW -->
+                
+        </form> 
+        <div class="row">                
+                <div class="form-group col-6 offset-3">
+                    <button class="btn btn-primary btn-block" id="generate">GENERATE</button>
+                    <small id="formFillInline" class="text-danger col-6 col-sm-7">
+                        <b>Fill the form first, please.</b>
+                    </small>
+                    <small id="formCharsInline" class="text-danger col-6 col-sm-7">
+                        <b>Wrong characters range.</b>
+                    </small>
+                </div><!-- FORM-GROUP -->
+            </div><!-- ROW -->                 
+        </div><!-- CONTAINER -->
+
+  </body>
+</html>
